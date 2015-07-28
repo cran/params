@@ -1,0 +1,14 @@
+386ecbe24b0e1935a3227cc01043a578 *DESCRIPTION
+01c5118ab2aff98500e9881f7fdd0e6c *NAMESPACE
+38f48ffc87083350b5be8c94e3f5ba44 *R/conf.R
+512dc1a9cdf0175f10c7f4c7ba078574 *R/opts.R
+86dbdeee7332a7582dd9be39fbc284ed *R/read-sheet.R
+68ffaf859101bbcc454fdb0f89910ba7 *R/write-sheet.R
+c1245389d1319ebb91b73fb47e7f4f7a *R/zzz.R
+376f587a6af7e3a3dcba60f0f548e645 *README.md
+754ad70e9220b7685e3b1d8bd367aca0 *inst/conf/params.conf
+cfce498d3ae0454b5a3f17d862ba834d *man/load_conf.Rd
+6e46b7c833440f2c6910963fabd2d300 *man/params.Rd
+20ccfa75fb6a29289034a124e1c84bc8 *man/parse_conf.Rd
+1c405d80f2699524a025973406ad6822 *man/read_sheet.Rd
+193426db3072788977c039e8d6605553 *man/write_sheet.Rd
