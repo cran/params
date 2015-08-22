@@ -1,3 +1,8 @@
+p a r a m s    0.2.4    2015/08/14
+------------------------------------------------
+- incorporated kable
+- parsing using whisker now optional for set_opts and load_opts
+
 p a r a m s    0.2.3    2015/08/07
 ------------------------------------------------
 - set_opts: enhanced error reporting

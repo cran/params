@@ -9,11 +9,12 @@
 \alias{set_opts}
 \title{Setting/loading and extracting various options into the environment}
 \usage{
-load_opts(x, check = TRUE, envir = opts, verbose = TRUE, ...)
+load_opts(x, check = TRUE, envir = opts, verbose = TRUE, .parse = TRUE,
+  ...)
 
 get_opts(x, envir = opts)
 
-set_opts(..., .dots, envir = opts)
+set_opts(..., .dots, .parse = TRUE, envir = opts)
 
 \method{print}{opts}(x, ...)
 
@@ -29,7 +30,9 @@ new_opts(envir = new.env())
 
 \item{envir}{environ used to store objects}
 
-\item{verbose}{load_opts()be chatty ?}
+\item{verbose}{load_opts() be chatty ?}
+
+\item{.parse}{set_opts(), load_opts(): logical, whether to auto-complete {{{}}} using previous opts}
 
 \item{...}{set_opts(): a named set of variable/value pairs seperated by comma}
 
@@ -75,7 +78,14 @@ Below is a list example options, retrieved via
 
 \code{get_opts()}:
 
-\Sexpr[results=verbatim]{params::get_opts()}
+\preformatted{
+	|name          |value            |
+	|default_regex |(.*)             |
+	|my_conf_path  |~/flowr/conf     |
+	|my_dir        |path/to/a/folder |
+	|my_path       |~/flowr          |
+	|my_tool_exe   |/usr/bin/ls      |
+}
 }
 \examples{
 ## set_opts

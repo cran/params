@@ -30,7 +30,7 @@ get_opts = function(x, envir = opts){
 #' @importFrom tools assertCondition
 #'
 #' @export
-set_opts = function(..., .dots, envir = opts){
+set_opts = function(..., .dots, .parse = TRUE, envir = opts){
 
 	dots = list(...)
 
@@ -50,6 +50,9 @@ set_opts = function(..., .dots, envir = opts){
 
 	stopifnot(is.list(.dots))
 
+	if(.parse) ## auto-complete
+		.dots = parse_opts(.dots)
+
 	list2env(.dots, envir = envir)
 
 	invisible(get_opts(names(.dots), envir = envir))
@@ -57,7 +60,6 @@ set_opts = function(..., .dots, envir = opts){
 
 
 #' @rdname params
-#' @importFrom knitr kable
 #' @export
 print.opts <- function(x, ...){
 	if(length(x) > 1){

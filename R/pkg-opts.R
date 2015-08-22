@@ -23,7 +23,8 @@
 #' @param .dots set_opts(): A named list, as a alternative to ...
 #' @param envir environ used to store objects
 #' @param check load_opts(): in case of a configuration file, whether to check if files defined in parameters exists..
-#' @param verbose load_opts()be chatty ?
+#' @param .parse set_opts(), load_opts(): logical, whether to auto-complete {{{}}} using previous opts
+#' @param verbose load_opts() be chatty ?
 
 #' @details
 #'
@@ -57,9 +58,15 @@
 #'
 #' \code{get_opts()}:
 #'
-#' \Sexpr[results=verbatim]{params::get_opts()}
-
-#'
+#' \preformatted{
+#'	|name          |value            |
+#	|:-------------|:----------------|
+#'	|default_regex |(.*)             |
+#'	|my_conf_path  |~/flowr/conf     |
+#'	|my_dir        |path/to/a/folder |
+#'	|my_path       |~/flowr          |
+#'	|my_tool_exe   |/usr/bin/ls      |
+#'}
 #' @seealso \link{read_sheet} \link{load_opts}
 #'
 #' @export
