@@ -4,7 +4,9 @@
 \name{opts}
 \alias{opts}
 \title{default opts}
-\format{An object of class \code{environment} of length 6.}
+\format{
+An object of class \code{environment} of length 6.
+}
 \usage{
 opts
 }
@@ -12,4 +14,3 @@ opts
 default opts
 }
 \keyword{datasets}
-

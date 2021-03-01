@@ -4,8 +4,17 @@
 \alias{kable}
 \title{Create tables in LaTeX, HTML, Markdown and reStructuredText}
 \usage{
-kable(x, format, digits = getOption("digits"), row.names = NA,
-  col.names = colnames(x), align, caption = NULL, escape = TRUE, ...)
+kable(
+  x,
+  format,
+  digits = getOption("digits"),
+  row.names = NA,
+  col.names = colnames(x),
+  align,
+  caption = NULL,
+  escape = TRUE,
+  ...
+)
 }
 \arguments{
 \item{x}{an R object (typically a matrix or data frame)}
@@ -43,6 +52,5 @@ This is a trimmed down version of the original kable function in knitr package.
 Please refer to knitr's \link[knitr]{kable} function for details.
 }
 \author{
-Yihui Xie \href{yihui.name}{http://yihui.name}
+Yihui Xie \href{http://yihui.org}{http://yihui.org}
 }
-

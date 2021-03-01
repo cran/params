@@ -3,16 +3,17 @@ p a r a m s
 ------------------
 
 
-[![Build Status](https://travis-ci.org/sahilseth/params.svg)](https://travis-ci.org/sahilseth/params)
+<!----[![Build Status](https://travis-ci.org/sahilseth/params.svg)](https://travis-ci.org/sahilseth/params)---->
+[![](https://github.com/sahilseth/params/workflows/R/badge.svg)](https://github.com/sahilseth/params/actions)
 [![](http://www.r-pkg.org/badges/version/params)](https://cran.r-project.org/package=params)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/params)
 
-**[sahilseth.github.io/params](http://sahilseth.github.io/params)**
+**[sahilseth.github.io/params](http://sahilseth.com/params/)**
 
 ## Rationale
 > Setting/loading and extracting various options from/into the R environment
 
-> A package level alternative for `options` and `getOptions`, to prevent cluterring the space. 
+> A package level alternative for `options` and `getOptions`, to prevent cluttering the space. 
 
 ## Main Features
 
