@@ -4,10 +4,10 @@ Title: Simplify Parameters
 Description: An interface to simplify organizing parameters used in a package,
     using external configuration files. This attempts to provide a cleaner
     alternative to options().
-Version: 0.7.3
+Version: 0.7.7
 Depends: R (>= 3.0.2), whisker
 Imports: utils, RcppTOML, glue, readr (>= 1.4.0), purrr
-Suggests: openxlsx, testthat, knitr, utf8
+Suggests: openxlsx, readxl, testthat, knitr, utf8
 License: GPL-2
 Authors@R: c(
 		person("Sahil", "Seth", role = c("aut", "cre"), email = "me@sahilseth.com"),
@@ -15,12 +15,13 @@ Authors@R: c(
 		)
 URL: https://github.com/sahilseth/params
 BugReports: https://github.com/sahilseth/params/issues
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.2
+Encoding: UTF-8
 Language: en-US
 NeedsCompilation: no
-Packaged: 2021-03-01 19:24:54 UTC; sahilseth
+Packaged: 2025-02-06 19:40:55 UTC; seths3
 Author: Sahil Seth [aut, cre],
   Yihui Xie [ctb] (kable from knitr R/table.R)
 Maintainer: Sahil Seth <me@sahilseth.com>
 Repository: CRAN
-Date/Publication: 2021-03-01 20:00:06 UTC
+Date/Publication: 2025-02-07 00:40:07 UTC
